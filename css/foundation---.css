@@ -1,19 +1,19 @@
 /*
 Error: Undefined variable: "$experimental".
-        on line 213 of E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/components/_switch.scss, in `switch-style'
-        from line 284 of E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/components/_switch.scss, in `switch'
-        from line 290 of E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/components/_switch.scss, in `@content'
-        from line 14 of E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/_functions.scss, in `exports'
-        from line 287 of E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/components/_switch.scss
-        from line 32 of E:\XAMPP\htdocs\wp-content\themes\QUINCE\sass\foundation---.scss
+        on line 213 of C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/components/_switch.scss, in `switch-style'
+        from line 284 of C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/components/_switch.scss, in `switch'
+        from line 290 of C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/components/_switch.scss, in `@content'
+        from line 14 of C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/_functions.scss, in `exports'
+        from line 287 of C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/components/_switch.scss
+        from line 32 of C:\wamp\www\notilogia\wp-content\themes\notilogia\sass\foundation---.scss
 
 Backtrace:
-E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/components/_switch.scss:213:in `switch-style'
-E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/components/_switch.scss:284:in `switch'
-E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/components/_switch.scss:290:in `@content'
-E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/_functions.scss:14:in `exports'
-E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/components/_switch.scss:287
-E:\XAMPP\htdocs\wp-content\themes\QUINCE\sass\foundation---.scss:32
+C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/components/_switch.scss:213:in `switch-style'
+C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/components/_switch.scss:284:in `switch'
+C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/components/_switch.scss:290:in `@content'
+C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/_functions.scss:14:in `exports'
+C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/components/_switch.scss:287
+C:\wamp\www\notilogia\wp-content\themes\notilogia\sass\foundation---.scss:32
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:287:in `visit_if'
@@ -183,4 +183,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$experimental\".\A         on line 213 of E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/components/_switch.scss, in `switch-style'\A         from line 284 of E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/components/_switch.scss, in `switch'\A         from line 290 of E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/components/_switch.scss, in `@content'\A         from line 14 of E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/_functions.scss, in `exports'\A         from line 287 of E:/XAMPP/htdocs/wp-content/themes/QUINCE/sass/foundation/components/_switch.scss\A         from line 32 of E:\XAMPP\htdocs\wp-content\themes\QUINCE\sass\foundation---.scss"; }
+  content: "Error: Undefined variable: \"$experimental\".\A         on line 213 of C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/components/_switch.scss, in `switch-style'\A         from line 284 of C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/components/_switch.scss, in `switch'\A         from line 290 of C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/components/_switch.scss, in `@content'\A         from line 14 of C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/_functions.scss, in `exports'\A         from line 287 of C:/wamp/www/notilogia/wp-content/themes/notilogia/sass/foundation/components/_switch.scss\A         from line 32 of C:\wamp\www\notilogia\wp-content\themes\notilogia\sass\foundation---.scss"; }
