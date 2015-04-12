@@ -24,7 +24,6 @@
 						
 					</footer>
 					<?php the_excerpt('ch3_texto_resumen'); ?>
-					<a class="leermas" href="<?php  the_permalink(); ?>">Leer más</a>
 				</article>
 				<?php $clearfix_archive++;
 					if ($clearfix_archive == 2 || $clearfix_archive == 4 || $clearfix_archive == 8 || $clearfix_archive == 10) { ?>
