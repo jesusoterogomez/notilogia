@@ -21,9 +21,9 @@
 					</a>
 					<footer>
 						<?php the_category(',');echo " - "; the_date();echo " - "; ?>
-						
 					</footer>
 					<?php the_excerpt('ch3_texto_resumen'); ?>
+					
 				</article>
 				<?php $clearfix_archive++;
 					if ($clearfix_archive == 2 || $clearfix_archive == 4 || $clearfix_archive == 8 || $clearfix_archive == 10) { ?>

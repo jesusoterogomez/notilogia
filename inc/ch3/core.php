@@ -17,10 +17,12 @@ function ch3_load_javascript(){
 
 wp_register_script( 'responsive-nav',get_template_directory_uri().'/js/responsive-nav.min.js' , false, '1.0.32', false );
 wp_register_script( 'unslider',get_template_directory_uri().'/js/unslider.js' , false, '1.0.', false );
+wp_register_script( 'nav',get_template_directory_uri().'/js/nav.js' , false, '1.0.', false );
 
 // ENQUEUE
 wp_enqueue_script('responsive-nav');
 wp_enqueue_script('unslider');
+wp_enqueue_script('nav');
 
 }
 
