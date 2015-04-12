@@ -1,0 +1,232 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+/*
+FONTS SIZES
+
+2.3em	titles
+1.5em	subtitles
+1em		body font
+0.7		meta info
+
+*/
+/*
+@font-face {
+font-family: Nexa;
+src: url("../font/Nexa.otf") format("opentype");
+}
+
+@font-face {
+font-family: Nexa;
+font-weight: bold;
+src: url("../font/NexaBold.otf") format("opentype");
+}
+*/
+a {
+  color: #e6353a; }
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1em;
+  color: #333333;
+  background: #fcfcfc; }
+
+h1, h2, h3, h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300; }
+
+footer {
+  text-align: center;
+  padding: 2em 0 0 0; }
+
+/*
+CLASSES	
+*/
+.blueborder, .headernav a {
+  border: 3px solid #e6353a;
+  padding: .5em;
+  font-size: 1.4em; }
+
+.dispro {
+  display: block;
+  font-size: 3.145833em;
+  font-weight: bold; }
+
+.headernav {
+  background: #111111 url("../img/05.jpg") center center no-repeat fixed;
+  background-size: cover;
+  text-align: center;
+  padding: 3em 0; }
+  .headernav h1 {
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 2em 0 2em 0; }
+  .headernav a {
+    border: 1px solid #e6353a; }
+
+.logo {
+  margin: auto;
+  text-align: center;
+  background: #e6353a;
+  width: 8em;
+  height: 6.5em; }
+
+.about-me {
+  text-align: center;
+  padding: 7.5em 0; }
+  .about-me p {
+    font-size: 1.5em; }
+
+.imgperfil {
+  border-radius: 17em;
+  border: .5em solid #fff;
+  width: 15em;
+  height: 15em; }
+
+.menu ul li {
+  display: inline; }
+
+.lvf {
+  background: #008059; }
+
+.facilius {
+  background: #2c2c2c; }
+
+.cindy {
+  background: #460e56; }
+
+.notilogia {
+  background: #0e696d; }
+
+.portafolio {
+  background: url("../img/bg-portafolio.jpg") center center no-repeat fixed;
+  background-size: cover;
+  padding: 8em 0;
+  text-align: center; }
+  .portafolio h2 {
+    color: white; }
+  .portafolio .row div {
+    min-height: 13em;
+    padding: 4em .5em 0 .5em; }
+  .portafolio span {
+    font-size: 3em;
+    padding: 1em;
+    display: inline-block;
+    width: 100%;
+    margin: 0; }
+  .portafolio p {
+    margin: 1em;
+    font-size: .8em; }
+
+.servicios {
+  padding: 8em 0; }
+
+#tweets {
+  text-align: left; }
+  #tweets ul li {
+    list-style: none;
+    padding: 0.5em 0 1em 0; }
+    #tweets ul li .tweet {
+      margin: 0 0 .5em 0; }
+    #tweets ul li .timePosted {
+      font-size: .75em;
+      margin: 0;
+      font-style: italic; }
+    #tweets ul li .interact {
+      margin: 0;
+      text-align: center; }
+      #tweets ul li .interact a {
+        font-size: .8em;
+        padding: 0 .4em;
+        margin: 0; }
+
+input.wpcf7-form-control.wpcf7-submit {
+  background: #e6353a;
+  border: none;
+  color: #fafafa;
+  padding: 1em 2em; }
+
+/*RESPONSIVE NAV*/
+/* ------------------------------------------
+  DEMO PAGE'S STYLES
+--------------------------------------------- */
+.nav-collapse,
+.nav-collapse * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.nav-collapse,
+.nav-collapse ul {
+  list-style: none;
+  width: 100%;
+  float: left; }
+
+.nav-collapse li {
+  float: left;
+  width: 100%; }
+
+@media screen and (min-width: 40em) {
+  .nav-collapse li {
+    width: 25%;
+    *width: 24.9%;
+    /* IE7 Hack */
+    _width: 19%;
+    /* IE6 Hack */ } }
+.nav-collapse a {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  background: #111111;
+  border-bottom: 1px solid white;
+  padding: 0.7em 1em;
+  float: left; }
+
+@media screen and (min-width: 40em) {
+  .nav-collapse a {
+    margin: 0;
+    padding: 1em;
+    float: left;
+    text-align: center;
+    border-bottom: 0;
+    border-right: 1px solid white; } }
+.nav-collapse ul ul a {
+  background: #ca3716;
+  padding-left: 2em; }
+
+@media screen and (min-width: 40em) {
+  .nav-collapse ul ul a {
+    display: none; } }
+.nav-toggle {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 70px;
+  height: 55px;
+  float: right;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: #111111 url("../img/hamburger.gif") no-repeat 50% 33%; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.3), screen and (min--moz-device-pixel-ratio: 1.3), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-device-pixel-ratio: 1.3), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .nav-toggle {
+    background-image: url("../img/hamburger-retina.gif");
+    -webkit-background-size: 100px 100px;
+    -moz-background-size: 100px 100px;
+    -o-background-size: 100px 100px;
+    background-size: 100px 100px; } }
+.nutshell {
+  text-align: center;
+  padding: 6em 0;
+  background: #f0f0f0; }
+  .nutshell i {
+    font-size: 5em;
+    color: #e6353a;
+    display: inline-block; }
+  .nutshell i:hover {
+    color: #333333;
+    transition: .5s;
+    -webkit-transition: .5s; }

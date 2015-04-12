@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg3261"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="Documento nuevo 1">
+  <defs
+     id="defs3263" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="176.1002"
+     inkscape:cy="944.41945"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="746"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3266">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:130.46746826000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Molot;-inkscape-font-specification:Molot"
+       x="-2.7118766"
+       y="94.172401"
+       id="text3003-27-0-2-8"
+       sodipodi:linespacing="125%"
+       transform="scale(0.77543629,1.2895966)"><tspan
+         sodipodi:role="line"
+         id="tspan3005-6-7-4-6"
+         x="-2.7118766"
+         y="94.172401">CH3</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3049-7-2-1-5"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Walkway Black;-inkscape-font-specification:'Walkway Black,'"
+       transform="matrix(0.97513389,0,0,0.88270831,-192.03976,-560.45618)"><flowRegion
+         id="flowRegion3051-8-5-1-0"><rect
+           id="rect3053-7-5-5-9"
+           width="182.90651"
+           height="58.415169"
+           x="205.88953"
+           y="777.52362"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Walkway Black;-inkscape-font-specification:'Walkway Black,'" /></flowRegion><flowPara
+         id="flowPara3055-81-2-2-0">WP+FRONTEND</flowPara></flowRoot>  </g>
+</svg>

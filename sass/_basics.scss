@@ -1,0 +1,92 @@
+/*
+Basic SASS mixins and styles for Wordpress
+*/
+
+////////////////////
+///// Mixins
+////////////////////
+
+@mixin css3($property, $value) {
+     @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+          #{$prefix}#{$property}: $value;
+     }
+}
+
+////////////////////
+///// CLASSES
+////////////////////
+
+//align classes
+.alignleft {
+  display: inline;
+  float: left;
+  margin: 0em 1em 0em 0em;
+}
+.alignright{
+  display: inline;
+  float: right;
+  margin: 0em 0em 0em 1em;
+}
+.aligncenter{
+clear: both;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+//padding & margin classes
+.np{
+  padding:0;
+}
+.npl{
+  padding-left:0;
+}
+.npr{
+  padding-right:0;
+}
+.nml{
+  margin-left: 0;
+}
+.nmr{
+  margin-right: 0;
+}
+// Displays
+
+/*.absolute{
+  position: absolute !important;
+}*/
+
+
+////////////////////
+///// STYLING
+////////////////////
+blockquote {
+	margin: 1em 0em 0 2.25em;
+	border-left: 1px solid #dddddd;
+	padding: 0.5625em 1.25em 0 1.1875em;
+	p {
+		line-height: 1.6;
+		color: #6f6f6f;
+	}
+}
+body{
+  @include css3(word-break,break-word);
+}
+a{
+  text-decoration: none;
+}
+
+p,article,aside{
+  //-ms-word-break: break-all;
+  //word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+
+
+
+

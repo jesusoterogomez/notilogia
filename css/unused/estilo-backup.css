@@ -1,0 +1,24 @@
+/*
+FONTS SIZES
+
+2.3em  titles
+1.5em subtitles
+1em    body font
+
+*/
+
+
+
+
+
+/*
+CLASSES
+*/
+
+.headerdeco{
+	background: url('../img/pan-con-queso.png');
+	height: 2.5em;
+}
+.headernav{
+	background: #000;
+}

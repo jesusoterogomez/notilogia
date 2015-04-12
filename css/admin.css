@@ -1,0 +1,313 @@
+.separador {
+color: black;
+font-size: 1.5em;
+border-bottom: 1px solid black;
+text-align: center;
+padding: 1em 0 1em 1em;
+}
+.buttonsubmit {
+background: #ec5a4c;
+border: none;
+padding: .5em;
+text-align: center;
+color: white;
+}
+.guardarcambios {
+text-align: center;
+margin: 2em 0 1em 0;
+float: none;
+}
+.content_options {
+
+}
+.option_input input {
+border-radius: 0;
+}
+
+.input_section {
+	border:1px solid #ddd;
+	border-bottom:0;
+	background:#f9f9f9;
+	border-radius: 3px 3px 3px 3px;
+}
+
+.option_input label {
+	font-size:12px;
+	font-weight:700;
+	width:15%;
+	display:block;
+	float:left;
+}
+
+.option_input {
+	padding:30px 10px;
+	border-bottom: 1px solid black;
+}
+
+.option_input small {
+	display:block;
+	float:right;
+	width:60%;
+	color:black;
+}
+
+.option_input input[type="text"], .option_input select {
+	width:20%;
+	font-size:12px;
+	padding:4px;
+	color:#333;
+	line-height:1em;
+	background:#f3f3f3;
+}
+
+.option_input input:focus, .option_input textarea:focus {
+	background:#fff;
+}
+
+.option_input textarea {
+	width:20%;
+	height:175px;
+	font-size:12px;
+	padding:4px;
+	color:#333;
+	line-height:1.5em;
+	background:#f3f3f3;
+}
+
+.input_title h3 {
+	color: #464646;
+	cursor: pointer;
+	float: left;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px 0 0;
+	text-shadow: 0 1px 0 #FFFFFF; 
+}
+
+.input_title {
+	cursor:pointer;
+	border-bottom:1px solid #ddd;
+	margin: 0;
+	padding: 7px 10px;
+	background-color: #F1F1F1;
+	background-image: -moz-linear-gradient(center top , #F9F9F9, #ECECEC);
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 1;
+	border-bottom-color: #DFDFDF;
+	box-shadow: 0 1px 0 #FFFFFF;
+}
+
+.input_title h3 img {
+	position: relative;
+	top: -2px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+ 
+span.submit {
+	display: block;
+	float: right;
+	margin: 4px 10px;
+	padding: 0;
+}
+
+.clearfix {
+	clear:both;
+}
+ 
+form > p.submit {
+	float: right;
+	padding: 0;
+	margin-right: 30px;
+}
+
+.options_wrap > ul li {
+	display: inline;
+	margin-right: 5px;
+}
+
+.content_options .message {
+	margin-top: 30px
+}
+
+.footer-credit {
+	margin-top: 60px;
+	background: 
+}
+.enlace{
+	text-align: center;
+}
+.enlace a{
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*!
+ * jQuery UI CSS Framework 1.8.23
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after { clear: both; }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin-top: 2px;
+	padding: .5em .5em .5em .7em;
+	min-height: 0; /* support: IE7 */
+}
+.ui-accordion .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-noicons {
+	padding-left: .7em;
+}
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	position: absolute;
+	left: .5em;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	border-top: 0;
+	overflow: auto;
+}
+
+
+/*!
+ * jQuery UI CSS Framework 1.8.23
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/?ctl=themeroller
+ */
+
+
+/* Component containers
+----------------------------------*/
+.ui-widget { font-family: Verdana,Arial,sans-serif; font-size: 1.1em; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Verdana,Arial,sans-serif; font-size: 1em; }
+.ui-widget-content { /*/*border: 1px solid #666666*/; background: #f1f1f1 ;*/ color: #6498A5; }
+.ui-widget-content a { color: #222222; }
+.ui-widget-header {background: #f1f1f1 ; color: #222222; font-weight: bold; }
+.ui-widget-header a { color: #222222; }
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { /*border: 1px solid #d3d3d3*/; background: #e6e6e6; font-weight: normal; color: #555555; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color:#6498A5; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { /*border: 1px solid #999999*/; background: #dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #212121; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #212121; text-decoration: none; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid black; border-bottom: 1px solid #f1f1f1; background: #f1f1f1; font-weight: bold; color: #212121; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #212121; text-decoration: none; }
+.ui-widget :active { outline: none; }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #fcefa1; background: #fbf9ee; color: #363636; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #363636; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a; background: #fef1ec; color: #cd0a0a; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #cd0a0a; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #cd0a0a; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+
+
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius 
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; -khtml-border-top-left-radius: 4px; border-top-left-radius: 4px; }
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; -khtml-border-top-right-radius: 4px; border-top-right-radius: 4px; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { -moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; -khtml-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { -moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; -khtml-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; }
+*/
+/* Overlays */
+.ui-widget-overlay { background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); }
+.ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }/*!
+ * jQuery UI Tabs 1.8.23
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.ui-tabs { position: relative; /*padding: .2em;*/ zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; /*padding: .2em .2em 0;*/ border-bottom: 1px solid #2d2d2d;}
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 1.2em 0px 0; /*border-bottom: 0 !important;*/ padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }

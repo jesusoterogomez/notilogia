@@ -1,0 +1,1334 @@
+
+
+@import 'foundation/settings';
+@import 'foundation';
+@import 'basics';
+//@charset "CP850";
+
+$top-bar-color: #045e67;
+$font-body: 'Open Sans', sans-serif;
+$font-h: 'Roboto Slab', sans-serif;
+$font-menu: 'Montserrat', sans-serif;
+$body-font-size: 1em;
+$background-color: #e6353a; 
+$primary-color: #333;
+$footercolor: #fff;
+$main-color: #045e67; //#e6353a;
+$secondary-color: #B30F00;//#002952;
+$tercer-color:#CCB514;
+$azulch3: #e6353a;//#ca4a5c;// #60a7db;
+$almostwhite: #FCFCFC;
+$white: #fff;
+$darkestwhite: #ababab;
+$hcolor:#4d4d4d;
+$verdenotilogiasombra:#023135;
+$twitter:#55acee;
+//colores categorias
+
+
+$deportes: #053369;
+$politica: #842022;
+$notigestion: #045e67;
+$salud: #25c8ca;
+$sexy: #4700a6;
+$amazon: #ff9900;
+$tendencia: #bd0052;
+$gastronomia: #f7ca18;
+
+a{
+  color:$main-color;
+}
+body {
+  font-family:$font-body;
+  font-size: $body-font-size;
+  color: $primary-color;
+  background: $almostwhite;
+}
+h1,h2,h3,h4{
+  font-family: $font-h;
+  //color: #fff;
+}
+footer{
+  text-align: center;
+ // background: #345;
+  padding: 2em 0 0 0;
+
+}
+#footer{
+  padding-top:2em;
+}
+/*
+CLASSES 
+*/
+.index{ 
+  margin-bottom: 4em;
+  h1{
+    font-size: 24pt;
+    margin:0;
+    color: $hcolor;
+    font-weight: 400;
+  }
+  p{
+    font-size:14pt;
+    margin: 0;
+    font-weight: 300;
+  }
+  .post{
+   
+    
+  }img{
+     width: 100%;
+    }
+  footer{
+    text-transform:uppercase;
+    font-size: .75em;
+    padding:0;
+    margin: 0;
+    text-align: left;
+    color: $darkestwhite;
+    a{
+      color: $darkestwhite;
+    }
+  }
+}
+.archive{ 
+  //margin-bottom: 4em;
+  h1{
+    font-size: 18pt;
+    margin:0;
+    color: $hcolor;
+    font-weight: 400;
+  }
+  p{
+    font-size:14pt;
+    margin: 0;
+    font-weight: 300;
+  }
+  .post{
+   
+    
+  }
+  img{
+     //width: 100%;
+    }
+  footer{
+    text-transform:uppercase;
+    font-size: .75em;
+    padding:0;
+    margin: 0;
+    text-align: left;
+    color: $darkestwhite;
+    a{
+      color: $darkestwhite;
+    }
+  }
+}
+
+#comentariospost, .linksrelacionados {
+  padding-top: 3em;
+}
+
+.otrosrelacionados {
+  padding: 3em 0;
+}
+.titulorelacionados {
+  margin: 0 0 1.2em 0;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: $darkestwhite;
+}
+
+.findesingle {
+  padding: 3em 0 12em 0;
+}
+
+.single{
+  main{
+    strong{
+      font-weight: 400;
+    }
+    b{
+      font-weight: 400;
+    }
+  }
+  h1{
+    font-size: 24pt;
+    margin:0;
+    color: $hcolor;
+  }
+  .hentry{
+      text-align: justify;
+      //padding de 1em al single
+      padding-right: 1em;
+    
+  }
+  p:first-child{
+    //font-size: 18pt;
+  }
+/*
+  p:first-child:first-letter{
+      font-size: 40pt;
+      //float: left;
+      line-height: 1;
+      font-family:$font-h;
+    
+  }*/
+  p{
+    font-size:15pt;
+    margin: 0 0 1.2em 0;
+    font-weight: 300;
+  }
+  .post{
+    img{
+     // float: left;
+     // margin: 0 1em 0 0;
+    }
+  }
+  footer{
+    text-transform:uppercase;
+    font-size: .75em;
+    padding:0;
+    margin: 0;
+    text-align: left;
+    color: $darkestwhite;
+    img{
+      border-radius:7em;
+    }
+
+
+  }
+  .breadcrumbs{
+      a{
+        color: $darkestwhite;
+      }      
+  }
+}
+
+.footer{
+  background: $main-color;
+  color: $darkestwhite;
+  a{
+    color: $tercer-color;
+  }
+}
+
+
+
+.footermenu{
+  font-size: .8em;
+  color: $darkestwhite;
+  text-align: center;
+  background: $verdenotilogiasombra;
+  ul{
+    display: inline-block;
+    margin-bottom: 0;
+    li{
+      display: inline-block;
+      a{
+        color: $darkestwhite;
+        padding: 0 1em;
+      }
+      a:hover{
+        font-weight: bold;
+      }
+    }
+  }
+  p{
+    font-size: .8em;
+  }
+}
+.sidebarderechosingle {
+  padding: 0 0 2em 0;
+  display: inline-block;
+}
+.categoriasfooter{
+  //@include css3(column-count,4);
+  text-align: left;
+    font-size: .8em;
+  list-style: none;
+  ul{
+    list-style: none;
+    padding:0;
+  }
+  a{
+    color: $almostwhite;
+  }
+  a:hover{
+    font-weight: bold;
+  }
+  .titulocat{
+    font-size: 1rem;
+    color: $white;
+  }
+}
+
+.findesingle{
+  .titulo{
+    text-align: center;
+  }
+}
+
+.relacionados{
+  margin:0;
+  font-size: .8em;
+  font-family: $font-h;
+  h2{
+
+  }
+  a{
+    color: $primary-color;
+
+  //font-weight: 300;
+  //font-size: 1.4em;
+  //text-align: justify;
+  //margin-bottom: 2em;
+  //display: block;
+
+  }
+}
+.category-related-single{
+  h2{
+  //  color:$white;
+   // background:$politica;
+    text-align: center;   
+  }
+
+  a{
+   // color: $white; 
+  }
+}
+
+
+.notigestionsidebar{
+    font-size: 1.4em;
+  h2{
+    color: #045F67;
+    text-align: center;
+    border-bottom: 2px solid #045F67;
+    //font-size: 2.2em;
+  }
+  .separadorelacionadas{
+    border:0;
+    border-bottom: 1px solid hsla(0, 0%, 62%, 0.33);
+  }
+  a{
+      color: #333;
+    font-weight: 300;
+    font-family: $font-body;
+    font-size: 1.2em;
+  }
+
+}
+
+.notigestionsidebar .relacionados div {
+  margin-bottom: 1em;
+}
+
+.compartirnuevo{
+  .circulo {
+    border-radius: 50%;
+    padding: 1.3em 1.5em;
+    display: inline-block;
+    width: 4em;
+    font-size: 2em;
+    a{
+      color: $white;
+    }
+  }
+  .fb{
+    background:#3b5998;
+
+  }
+  .tw{
+    background:#4099FF;
+
+  }
+  .gp{
+    background:#D34836;
+  }
+}
+
+.migas{
+  text-align: center;
+}
+.tuiter{
+  h2{
+    color: $white;
+    background:$twitter;
+    text-align: center;
+  }
+  ul{
+    padding:0;
+  }
+}
+hr.cleararchive {
+  clear: both;
+  border: 0;
+  margin: 1em 0;
+}
+
+
+.principal {
+  padding: 1em 0;
+}
+.headernav {    
+  background: $top-bar-color;
+  @include css3(box-shadow, 0px 4px 5px rgba(0,0,0,.25));
+  margin-bottom: 30px;
+  //background: $top-bar-color ;
+  background-size: cover;
+ // background: $main-color;
+  text-align: center;
+  //padding: 0.3em 0;
+  aside{
+    margin-top: 5em;
+    margin-bottom: 6em;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+
+    line-height: 1.2;
+    margin: 2em 0 2em 0;
+  }
+  a{
+    font-family: $font-body;
+    font-weight: 300;
+  }
+}
+
+
+.homenav{
+  background: #F7F7F7;
+  li{
+    a{
+      color: #000;
+    }    
+  }
+
+}
+
+//Coloreando index
+
+.blog{
+    .post.category-politica:hover{
+      h1,h2,h3{
+          color: $politica;
+      }
+    }
+    .post.category-notigestion:hover{
+      h1,h2,h3{
+          color: $notigestion;
+      }
+    }
+    .post.category-tendencia:hover{
+      h1,h2,h3{
+          color: $tendencia;
+      }
+    }
+    .post.category-deportes:hover{
+      h1,h2,h3{
+          color: $deportes;
+      }
+    }
+    .post.category-amazon:hover{
+      h1,h2,h3{
+          color: $amazon;
+      }
+    }
+    .post.category-salud:hover{
+      h1,h2,h3{
+          color: $salud;
+      }
+    }
+    .post.category-sexy:hover{
+      h1,h2,h3{
+          color: $sexy;
+      }
+    }
+    .post.category-gastronomia:hover{
+      h1,h2,h3{
+          color: $gastronomia;
+      }
+    }
+}
+
+
+.compraramazon{
+  color: $white;
+  background: $amazon;
+  padding: .3em .5em;
+  border-radius: .5em;
+
+  border-bottom: solid 2px rgba(0,0,0,.4);
+  @include css3(text-shadow,1px 1px 1px rgba(0,0,0,1));
+@include css3(transition,linear 0.5s ease);
+
+}
+.compraramazon:hover{
+
+  border-bottom: solid 2px $amazon;
+@include css3(transition,linear 0.5s ease);
+
+}
+.separadorrelacionadas {
+  border-bottom: 1px solid rgba(4, 95, 103, 0.49);
+  border-top: none;
+}
+
+.relacionadasingle{
+  font-size: 1.2em; 
+}
+// Autor
+
+.perfilautor {
+padding-top: 1.4em;
+  text-align: center;
+  text-transform: none;
+  font-size: 1.25em;
+  color: $primary-color;
+  font-weight: bold;
+  display: inline-block;
+  padding-left: 3em;
+  a{
+   font-style: italic;
+   font-weight: normal;
+  }
+}
+
+//COLOREANDO CATEGORIAS
+.imagencategoria{
+  min-height: 28em;
+  margin: 0 0 3em 0;
+  text-align: center;
+  color: $white;
+  h1{
+    color: $white;
+    padding-top: 3.5em;
+    font-size: 3em; 
+    font-family: $font-body;
+    font-weight:300;
+  }
+  p{
+    font-size: .8em;
+  }
+}
+
+.category{
+  .headernav{
+    position: absolute;
+  width: 100%;
+  }
+}
+.category-politica{
+  .headernav{
+    background: $politica;
+    margin-bottom: 0;
+  }
+  .imagencategoria{
+    //background: linear-gradient(rgba(23, 27, 35, 0.5), rgba(132, 32, 34, .81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-politica.jpg) no-repeat center center;
+    background: linear-gradient(rgba($politica,0.5), rgba($politica, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-politica.jpg) no-repeat center center;
+    background-size: cover;
+
+  }
+}
+.category-notigestion{
+  .headernav{
+    background: $notigestion;
+    margin-bottom: 0;
+  }
+  .imagencategoria{
+   background: linear-gradient(rgba($notigestion,0.5), rgba($notigestion, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-notigestion.jpg) no-repeat center center;
+    background-size: cover;
+
+  }
+}
+.category-tendencia{
+  .headernav{
+    background: $tendencia;
+    margin-bottom: 0;
+
+  }
+  .imagencategoria{
+   background: linear-gradient(rgba($tendencia,0.5), rgba($tendencia, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-tendencia.jpg) no-repeat center center;
+    background-size: cover;
+
+  }
+}
+.category-deportes{
+  .headernav{
+    background: $deportes;
+    margin-bottom: 0;
+  }
+  .imagencategoria{
+   background: linear-gradient(rgba($notigestion,0.5), rgba($notigestion, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-notigestion.jpg) no-repeat center center;
+    background-size: cover;
+
+  }
+}
+.category-amazon{
+  .headernav{
+    background: $amazon;
+    margin-bottom: 0;
+  }
+  .imagencategoria{
+   background: linear-gradient(rgba($notigestion,0.5), rgba($notigestion, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-notigestion.jpg) no-repeat center center;
+    background-size: cover;
+
+  }
+}
+.category-salud{
+  .headernav{
+    background: $salud;
+    margin-bottom: 0;
+  }
+  .imagencategoria{
+   background: linear-gradient(rgba($notigestion,0.5), rgba($notigestion, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-notigestion.jpg) no-repeat center center;
+    background-size: cover;
+
+  }
+}
+.category-sexy{
+  .headernav{
+    background: $sexy;
+    margin-bottom: 0;
+  }
+  .imagencategoria{
+   background: linear-gradient(rgba($notigestion,0.5), rgba($notigestion, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-notigestion.jpg) no-repeat center center;
+    background-size: cover;
+
+  }
+}
+.category-gastronomia{
+  .headernav{
+    background: $gastronomia;
+    margin-bottom: 0;
+  }
+  .imagencategoria{
+   background: linear-gradient(rgba($notigestion,0.5), rgba($notigestion, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-notigestion.jpg) no-repeat center center;
+    background-size: cover;
+
+  }
+}
+
+// HASTA QUI
+.adheader{
+  text-align: right;
+}
+
+.menu-principal-container{
+  ul{
+    padding-left: 0;
+  }
+}
+
+.breadcrumbs{
+  background:none;
+  border:none;
+  padding: 0 0 0.5em 0;
+  ul{
+    padding:0;
+    li{
+      display: inline;
+    }
+  }
+}
+.logo {
+  text-align: left;
+  padding-top: 4px;
+padding-bottom: 4px;
+img{
+  padding:3px 0;
+}
+
+}
+//agregar el position:absolute cuando esté pequeño
+
+.menu{
+  ul{
+    li{
+      display: inline;
+     // color: #fff;
+    }
+  }
+}
+
+.post{
+  header{
+    .metadatos{
+        text-transform: uppercase;
+        font-size: 0.6875rem;
+        padding: 0;
+        margin: 0 0 3em 0;
+        display: block;
+    }
+    h1{
+      font-size: 2.75em;
+      font-weight: 900;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+}
+.postbajos{
+  h2{
+    font-weight: 400;
+    margin-bottom:0;
+  }
+  p{
+    margin-top: 0;
+    font-weight: 300;
+  }
+  footer{
+    padding:0;
+    font-size: .8em;
+    text-align: left;
+    color: $darkestwhite;
+    font-weight: 300;
+    text-transform: uppercase;
+    a{
+      color: $darkestwhite;
+    }
+  }
+}
+.clearpostbajos{
+  clear: both;
+  margin: 0 0 1em 0;
+}
+
+#post-pagination {
+text-align: center;
+font-weight: bold;
+font-family: $font-menu;
+text-transform: uppercase;
+font-size: 1.3em;
+color: #9E9898;
+}
+
+.sidebarmedio{
+  margin-bottom: 3em;
+  h3{
+    padding:0;
+    margin: .3em;
+    line-height: 1.3;
+    font-size: .8em;
+  }
+  footer{
+    padding:0;
+    font-size: .6em;
+  }
+}
+.relacionadasfondoindex{
+  clear: both;
+  h2 {
+    font-family: $font-menu;
+    text-transform: uppercase;
+  }
+  .titulo{
+    font-family: $font-h;
+  }
+}
+
+#tweets {
+  text-align: left; }
+  #tweets ul li {
+    list-style: none; }
+    #tweets ul li .tweet {
+      margin: 0 0 .5em 0; }
+    #tweets ul li .timePosted {
+      font-size: .75em;
+      margin: 0; }
+    #tweets ul li .interact {
+      margin: 0; font-size: .75em;}
+      #tweets ul li .interact a {
+        font-size: .8em;
+        padding: 0 .4em;
+        margin: 0; }
+#tweets{
+  p{
+    font-size: 1em;
+  }
+}
+
+
+//*RESPONSIVE NAV*/
+
+#menuheader{
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  .current-menu-item{
+    border-bottom:2px solid red;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+//original 40
+@media screen and (min-width: 60em) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+
+//  NAVIGATION STYLES  (+ responsive-nav.css file is loaded in the <head>)
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-collapse,
+.nav-collapse * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.nav-collapse,
+.nav-collapse ul {
+  list-style: none;
+  width: 100%;
+  float: left;
+}
+
+.nav-collapse li {
+  float: right;
+  width: 100%;
+}
+
+@media screen and (min-width: 60em) {
+  .nav-collapse li {
+    float: left;
+    width: auto;
+    display: inline;
+  /*  *width: 24.9%; /* IE7 Hack */
+    /*_width: 19%; /* IE6 Hack */
+  }
+}
+
+.nav-collapse a {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding: 0.7em 1em;
+  float: left;
+}
+
+@media screen and (min-width: 60em) {
+  .nav-collapse a {
+    margin: 0;
+    //padding: 1em;
+    float: left;
+    text-align: center;
+    border-bottom: 0;
+  }
+}
+
+.nav-collapse ul ul a {
+  background: #ca3716;
+  padding-left: 2em;
+}
+
+@media screen and (min-width: 60em) {
+  .nav-collapse ul ul a {
+    display: none;
+  }
+}
+
+
+
+.nav-toggle {
+  position: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  text-indent: -999px;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 55px;
+  float: right;
+}
+
+.nav-toggle:before {
+  color: #fff; /* Edit this to change the icon color */
+  font-family: "responsivenav", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 28px;
+  text-transform: none;
+  position: absolute;
+  content: "≡"; // hamburguesa
+  text-indent: 0;
+  text-align: center;
+  line-height: 55px;
+  speak: none;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-toggle.active::before {
+  font-size: 24px;
+  content:"x";
+}
+
+
+//iconfont
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?-kumers');
+  src:url('../fonts/icomoon.eot?#iefix-kumers') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?-kumers') format('woff'),
+    url('../fonts/icomoon.ttf?-kumers') format('truetype'),
+    url('../fonts/icomoon.svg?-kumers#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+  content: "\f004";
+}
+
+.icon-star:before {
+  content: "\f005";
+}
+
+.icon-flag:before {
+  content: "\f024";
+}
+
+.icon-list:before {
+  content: "\f03a";
+}
+
+.icon-image:before {
+  content: "\f03e";
+}
+
+.icon-photo:before {
+  content: "\f03e";
+}
+
+.icon-picture-o:before {
+  content: "\f03e";
+}
+
+.icon-gift:before {
+  content: "\f06b";
+}
+
+.icon-shopping-cart:before {
+  content: "\f07a";
+}
+
+.icon-folder:before {
+  content: "\f07b";
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+
+.icon-credit-card:before {
+  content: "\f09d";
+}
+
+.icon-group:before {
+  content: "\f0c0";
+}
+
+.icon-users:before {
+  content: "\f0c0";
+}
+
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+
+.icon-caret-left:before {
+  content: "\f0d9";
+}
+
+.icon-caret-right:before {
+  content: "\f0da";
+}
+
+.icon-gavel:before {
+  content: "\f0e3";
+}
+
+.icon-legal:before {
+  content: "\f0e3";
+}
+
+.icon-clipboard:before {
+  content: "\f0ea";
+}
+
+.icon-paste:before {
+  content: "\f0ea";
+}
+
+.icon-stethoscope:before {
+  content: "\f0f1";
+}
+
+.icon-cutlery:before {
+  content: "\f0f5";
+}
+
+.icon-spinner:before {
+  content: "\f110";
+}
+
+.icon-eur:before {
+  content: "\f153";
+}
+
+.icon-euro:before {
+  content: "\f153";
+}
+
+.icon-dollar:before {
+  content: "\f155";
+}
+
+.icon-usd:before {
+  content: "\f155";
+}
+
+.icon-file-text:before {
+  content: "\f15c";
+}
+
+.icon-youtube:before {
+  content: "\f167";
+}
+
+.icon-youtube-play:before {
+  content: "\f16a";
+}
+
+.icon-instagram:before {
+  content: "\f16d";
+}
+
+.icon-bank:before {
+  content: "\f19c";
+}
+
+.icon-institution:before {
+  content: "\f19c";
+}
+
+.icon-university:before {
+  content: "\f19c";
+}
+
+.icon-futbol-o:before {
+  content: "\f1e3";
+}
+
+.icon-soccer-ball-o:before {
+  content: "\f1e3";
+}
+
+.icon-line-chart:before {
+  content: "\f201";
+}
+
+.icon-angellist:before {
+  content: "\f209";
+}
+
+.icon-heartbeat:before {
+  content: "\f21e";
+}
+
+.icon-whatsapp:before {
+  content: "\f232";
+}
+
+.icon-android:before {
+  content: "\e600";
+}
+
+.icon-home:before {
+  content: "\e601";
+}
+
+.icon-info-outline:before {
+  content: "\e602";
+}
+
+.icon-search:before {
+  content: "\e608";
+}
+
+.icon-thumb-up:before {
+  content: "\e603";
+}
+
+.icon-messenger:before {
+  content: "\e604";
+}
+
+.icon-insert-chart:before {
+  content: "\e607";
+}
+
+.icon-keyboard-arrow-left:before {
+  content: "\e605";
+}
+
+.icon-keyboard-arrow-right:before {
+  content: "\e606";
+}
+
+.icon-share:before {
+  content: "\e609";
+}
+
+
+
+
+//SLIDER 
+.slider {
+  position: relative; 
+  overflow: auto; 
+  margin: 0 0 2em 0;
+  ul{
+    padding:0;
+    li { float: left; width:100%; min-height:8em; list-style:none;
+      h2{
+        text-align: center;
+        margin-top: 15em;
+
+
+        a{
+          color: $white;
+          text-align: center;
+        }
+      }
+    }
+  } 
+  .wrap{
+    height: 8em;
+  }
+// colores slider
+  .category-tendencia{
+    h2{
+      background:$tendencia;
+    }
+  }
+  .category-politica{
+    h2{
+      background:$politica;
+    }
+  }
+
+
+
+}
+.unslider-arrow{
+  font-size: 2em;
+  //position: absolute;
+
+}
+
+.next{
+ // float: right;
+  top: 45%;
+  position: absolute;
+  z-index: 10;
+  right: 2%;
+  color: $white;
+  background: rgba(139, 139, 139, 0.38);
+  border-radius: 5em;
+  /* width: 1.5em; */
+  text-align: left;
+  padding: 1px 9px;
+}
+.prev{
+ // float: right;
+  top: 45%;
+  position: absolute;
+  z-index: 10;
+  left: 2%;
+
+
+  color: $white;
+  background: rgba(139, 139, 139, 0.38);
+  border-radius: 5em;
+  /* width: 1.5em; */
+  text-align: left;
+  padding: 1px 9px;
+}
+// colores navegacion
+
+
+.navamazon:hover{
+  background: $amazon !important;
+  color: $white;
+  @include css3(transition,all 0.5s ease);
+}
+.navnotigestion:hover{
+  background: $notigestion !important;
+  color: $white;
+  font-weight: bold;
+  @include css3(transition,all 0.5s ease);
+  border-bottom: -3px solid $notigestion ;
+
+}
+.navnotilogia:hover{
+  background: $notigestion !important;
+  color: $white;
+@include css3(transition,all 0.5s ease);
+}
+.navdeportes:hover{
+  background: $deportes !important;
+  color: $white;
+@include css3(transition,all 0.5s ease);
+}
+.navpolitica:hover{
+  background: $politica !important;
+  color: $white;
+@include css3(transition,all 0.5s ease);
+
+}
+.navsalud:hover{
+  background: $salud !important;
+  color: $white;
+@include css3(transition,all 0.5s ease);
+}
+.navsexy:hover{
+  background: $sexy !important;
+  color: $white;
+@include css3(transition,all 0.5s ease);
+}
+.navtendencia:hover{
+  background: $tendencia !important;  
+  color: $white;
+@include css3(transition,all 0.5s ease);
+}
+
+.navgastronomia:hover{
+  background: $gastronomia !important;  
+  color: $white;
+@include css3(transition,all 0.5s ease);
+}
+
+/* PARA COPYPASTE
+
+.category-politica{
+
+}
+.category-notigestion{
+
+}
+.category-tendencia{
+
+}
+.category-deportes{
+
+}
+.category-amazon{
+
+}
+.category-salud{
+
+}
+.category-sexy{
+
+}
+.category-gastronomia{
+
+}*/
+
