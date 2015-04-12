@@ -51,7 +51,7 @@ h1,h2,h3,h4{
 footer{
   text-align: center;
  // background: #345;
-  padding: 2em 0 0 0;
+ padding: 2em 0 0 0;
 
 }
 #footer{
@@ -74,22 +74,22 @@ CLASSES
     font-weight: 300;
   }
   .post{
-   
-    
+
+
   }img{
-     width: 100%;
-    }
-  footer{
-    text-transform:uppercase;
-    font-size: .75em;
-    padding:0;
-    margin: 0;
-    text-align: left;
+   width: 100%;
+ }
+ footer{
+  text-transform:uppercase;
+  font-size: .75em;
+  padding:0;
+  margin: 0;
+  text-align: left;
+  color: $darkestwhite;
+  a{
     color: $darkestwhite;
-    a{
-      color: $darkestwhite;
-    }
   }
+}
 }
 .archive{ 
   //margin-bottom: 4em;
@@ -105,13 +105,13 @@ CLASSES
     font-weight: 300;
   }
   .post{
-   
-    
+
+
   }
   img{
      //width: 100%;
-    }
-  footer{
+   }
+   footer{
     text-transform:uppercase;
     font-size: .75em;
     padding:0;
@@ -158,12 +158,12 @@ CLASSES
     color: $hcolor;
   }
   .hentry{
-      text-align: justify;
+    text-align: justify;
       //padding de 1em al single
       padding-right: 1em;
-    
-  }
-  p:first-child{
+
+    }
+    p:first-child{
     //font-size: 18pt;
   }
 /*
@@ -183,26 +183,26 @@ CLASSES
     img{
      // float: left;
      // margin: 0 1em 0 0;
-    }
+   }
+ }
+ footer{
+  text-transform:uppercase;
+  font-size: .75em;
+  padding:0;
+  margin: 0;
+  text-align: left;
+  color: $darkestwhite;
+  img{
+    border-radius:7em;
   }
-  footer{
-    text-transform:uppercase;
-    font-size: .75em;
-    padding:0;
-    margin: 0;
-    text-align: left;
+
+
+}
+.breadcrumbs{
+  a{
     color: $darkestwhite;
-    img{
-      border-radius:7em;
-    }
-
-
-  }
-  .breadcrumbs{
-      a{
-        color: $darkestwhite;
-      }      
-  }
+  }      
+}
 }
 
 .footer{
@@ -245,7 +245,7 @@ CLASSES
 .categoriasfooter{
   //@include css3(column-count,4);
   text-align: left;
-    font-size: .8em;
+  font-size: .8em;
   list-style: none;
   ul{
     list-style: none;
@@ -285,23 +285,23 @@ CLASSES
   //margin-bottom: 2em;
   //display: block;
 
-  }
+}
 }
 .category-related-single{
   h2{
   //  color:$white;
    // background:$politica;
-    text-align: center;   
-  }
+   text-align: center;   
+ }
 
-  a{
+ a{
    // color: $white; 
-  }
+ }
 }
 
 
 .notigestionsidebar{
-    font-size: 1.4em;
+  font-size: 1.4em;
   h2{
     color: #045F67;
     text-align: center;
@@ -313,7 +313,7 @@ CLASSES
     border-bottom: 1px solid hsla(0, 0%, 62%, 0.33);
   }
   a{
-      color: #333;
+    color: #333;
     font-weight: 300;
     font-family: $font-body;
     font-size: 1.2em;
@@ -378,6 +378,8 @@ hr.cleararchive {
   }
 }
 
+
+
 @media screen and (max-width: 782px) {
   .headernav.fixed {
     top: 46px;
@@ -385,9 +387,20 @@ hr.cleararchive {
 }
 
 .headernav {    
-
+  .sticky-nav{
+    li{
+      position: relative;
+      left: -111px;
+      @include css3(transition,all 0.3s ease);
+    }
+  }
   &.fixed{
     position:fixed;
+    .sticky-logo, .sticky-nav{
+      li{
+        left: 0;
+      }
+    }
   }
   position: relative;
   z-index: 9999;
@@ -397,7 +410,7 @@ hr.cleararchive {
   //background: $top-bar-color ;
   background-size: cover;
  // background: $main-color;
-  text-align: center;
+ text-align: center;
   //padding: 0.3em 0;
   aside{
     margin-top: 5em;
@@ -432,46 +445,46 @@ hr.cleararchive {
 //Coloreando index
 
 .blog{
-    .post.category-politica:hover{
-      h1,h2,h3{
-          color: $politica;
-      }
+  .post.category-politica:hover{
+    h1,h2,h3{
+      color: $politica;
     }
-    .post.category-notigestion:hover{
-      h1,h2,h3{
-          color: $notigestion;
-      }
+  }
+  .post.category-notigestion:hover{
+    h1,h2,h3{
+      color: $notigestion;
     }
-    .post.category-tendencia:hover{
-      h1,h2,h3{
-          color: $tendencia;
-      }
+  }
+  .post.category-tendencia:hover{
+    h1,h2,h3{
+      color: $tendencia;
     }
-    .post.category-deportes:hover{
-      h1,h2,h3{
-          color: $deportes;
-      }
+  }
+  .post.category-deportes:hover{
+    h1,h2,h3{
+      color: $deportes;
     }
-    .post.category-amazon:hover{
-      h1,h2,h3{
-          color: $amazon;
-      }
+  }
+  .post.category-amazon:hover{
+    h1,h2,h3{
+      color: $amazon;
     }
-    .post.category-salud:hover{
-      h1,h2,h3{
-          color: $salud;
-      }
+  }
+  .post.category-salud:hover{
+    h1,h2,h3{
+      color: $salud;
     }
-    .post.category-sexy:hover{
-      h1,h2,h3{
-          color: $sexy;
-      }
+  }
+  .post.category-sexy:hover{
+    h1,h2,h3{
+      color: $sexy;
     }
-    .post.category-gastronomia:hover{
-      h1,h2,h3{
-          color: $gastronomia;
-      }
+  }
+  .post.category-gastronomia:hover{
+    h1,h2,h3{
+      color: $gastronomia;
     }
+  }
 }
 
 
@@ -483,13 +496,13 @@ hr.cleararchive {
 
   border-bottom: solid 2px rgba(0,0,0,.4);
   @include css3(text-shadow,1px 1px 1px rgba(0,0,0,1));
-@include css3(transition,linear 0.5s ease);
+  @include css3(transition,linear 0.5s ease);
 
 }
 .compraramazon:hover{
 
   border-bottom: solid 2px $amazon;
-@include css3(transition,linear 0.5s ease);
+  @include css3(transition,linear 0.5s ease);
 
 }
 .separadorrelacionadas {
@@ -503,7 +516,7 @@ hr.cleararchive {
 // Autor
 
 .perfilautor {
-padding-top: 1.4em;
+  padding-top: 1.4em;
   text-align: center;
   text-transform: none;
   font-size: 1.25em;
@@ -514,7 +527,7 @@ padding-top: 1.4em;
   a{
    font-style: italic;
    font-weight: normal;
-  }
+ }
 }
 
 //COLOREANDO CATEGORIAS
@@ -538,7 +551,7 @@ padding-top: 1.4em;
 .category{
   .headernav{
     position: absolute;
-  width: 100%;
+    width: 100%;
   }
 }
 .category-politica{
@@ -560,9 +573,9 @@ padding-top: 1.4em;
   }
   .imagencategoria{
    background: linear-gradient(rgba($notigestion,0.5), rgba($notigestion, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-notigestion.jpg) no-repeat center center;
-    background-size: cover;
+   background-size: cover;
 
-  }
+ }
 }
 .category-tendencia{
   .headernav{
@@ -572,9 +585,9 @@ padding-top: 1.4em;
   }
   .imagencategoria{
    background: linear-gradient(rgba($tendencia,0.5), rgba($tendencia, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-tendencia.jpg) no-repeat center center;
-    background-size: cover;
+   background-size: cover;
 
-  }
+ }
 }
 .category-deportes{
   .headernav{
@@ -583,9 +596,9 @@ padding-top: 1.4em;
   }
   .imagencategoria{
    background: linear-gradient(rgba($notigestion,0.5), rgba($notigestion, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-notigestion.jpg) no-repeat center center;
-    background-size: cover;
+   background-size: cover;
 
-  }
+ }
 }
 .category-amazon{
   .headernav{
@@ -594,9 +607,9 @@ padding-top: 1.4em;
   }
   .imagencategoria{
    background: linear-gradient(rgba($notigestion,0.5), rgba($notigestion, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-notigestion.jpg) no-repeat center center;
-    background-size: cover;
+   background-size: cover;
 
-  }
+ }
 }
 .category-salud{
   .headernav{
@@ -605,9 +618,9 @@ padding-top: 1.4em;
   }
   .imagencategoria{
    background: linear-gradient(rgba($notigestion,0.5), rgba($notigestion, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-notigestion.jpg) no-repeat center center;
-    background-size: cover;
+   background-size: cover;
 
-  }
+ }
 }
 .category-sexy{
   .headernav{
@@ -616,9 +629,9 @@ padding-top: 1.4em;
   }
   .imagencategoria{
    background: linear-gradient(rgba($notigestion,0.5), rgba($notigestion, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-notigestion.jpg) no-repeat center center;
-    background-size: cover;
+   background-size: cover;
 
-  }
+ }
 }
 .category-gastronomia{
   .headernav{
@@ -627,9 +640,9 @@ padding-top: 1.4em;
   }
   .imagencategoria{
    background: linear-gradient(rgba($notigestion,0.5), rgba($notigestion, 0.81)), url(http://notilogia.com/wp-content/themes/QUINCE/img/destacada-notigestion.jpg) no-repeat center center;
-    background-size: cover;
+   background-size: cover;
 
-  }
+ }
 }
 
 // HASTA QUI
@@ -657,10 +670,10 @@ padding-top: 1.4em;
 .logo {
   text-align: left;
   padding-top: 4px;
-padding-bottom: 4px;
-img{
-  padding:3px 0;
-}
+  padding-bottom: 4px;
+  img{
+    padding:3px 0;
+  }
 
 }
 //agregar el position:absolute cuando esté pequeño
@@ -670,18 +683,18 @@ img{
     li{
       display: inline;
      // color: #fff;
-    }
-  }
+   }
+ }
 }
 
 .post{
   header{
     .metadatos{
-        text-transform: uppercase;
-        font-size: 0.6875rem;
-        padding: 0;
-        margin: 0 0 3em 0;
-        display: block;
+      text-transform: uppercase;
+      font-size: 0.6875rem;
+      padding: 0;
+      margin: 0 0 3em 0;
+      display: block;
     }
     h1{
       font-size: 2.75em;
@@ -718,12 +731,12 @@ img{
 }
 
 #post-pagination {
-text-align: center;
-font-weight: bold;
-font-family: $font-menu;
-text-transform: uppercase;
-font-size: 1.3em;
-color: #9E9898;
+  text-align: center;
+  font-weight: bold;
+  font-family: $font-menu;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  color: #9E9898;
 }
 
 .sidebarmedio{
@@ -756,20 +769,20 @@ color: #9E9898;
     list-style: none; }
     #tweets ul li .tweet {
       margin: 0 0 .5em 0; }
-    #tweets ul li .timePosted {
-      font-size: .75em;
-      margin: 0; }
-    #tweets ul li .interact {
-      margin: 0; font-size: .75em;}
-      #tweets ul li .interact a {
-        font-size: .8em;
-        padding: 0 .4em;
+      #tweets ul li .timePosted {
+        font-size: .75em;
         margin: 0; }
-#tweets{
-  p{
-    font-size: 1em;
-  }
-}
+        #tweets ul li .interact {
+          margin: 0; font-size: .75em;}
+          #tweets ul li .interact a {
+            font-size: .8em;
+            padding: 0 .4em;
+            margin: 0; }
+            #tweets{
+              p{
+                font-size: 1em;
+              }
+            }
 
 
 //*RESPONSIVE NAV*/
@@ -961,9 +974,9 @@ color: #9E9898;
   font-family: 'icomoon';
   src:url('../fonts/icomoon.eot?-kumers');
   src:url('../fonts/icomoon.eot?#iefix-kumers') format('embedded-opentype'),
-    url('../fonts/icomoon.woff?-kumers') format('woff'),
-    url('../fonts/icomoon.ttf?-kumers') format('truetype'),
-    url('../fonts/icomoon.svg?-kumers#icomoon') format('svg');
+  url('../fonts/icomoon.woff?-kumers') format('woff'),
+  url('../fonts/icomoon.ttf?-kumers') format('truetype'),
+  url('../fonts/icomoon.svg?-kumers#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1221,16 +1234,16 @@ color: #9E9898;
     height: 8em;
   }
 // colores slider
-  .category-tendencia{
-    h2{
-      background:$tendencia;
-    }
+.category-tendencia{
+  h2{
+    background:$tendencia;
   }
-  .category-politica{
-    h2{
-      background:$politica;
-    }
+}
+.category-politica{
+  h2{
+    background:$politica;
   }
+}
 
 
 
@@ -1243,28 +1256,28 @@ color: #9E9898;
 
 .next{
  // float: right;
-  top: 45%;
-  position: absolute;
-  z-index: 10;
-  right: 2%;
-  color: $white;
-  background: rgba(139, 139, 139, 0.38);
-  border-radius: 5em;
+ top: 45%;
+ position: absolute;
+ z-index: 10;
+ right: 2%;
+ color: $white;
+ background: rgba(139, 139, 139, 0.38);
+ border-radius: 5em;
   /* width: 1.5em; */
   text-align: left;
   padding: 1px 9px;
 }
 .prev{
  // float: right;
-  top: 45%;
-  position: absolute;
-  z-index: 10;
-  left: 2%;
+ top: 45%;
+ position: absolute;
+ z-index: 10;
+ left: 2%;
 
 
-  color: $white;
-  background: rgba(139, 139, 139, 0.38);
-  border-radius: 5em;
+ color: $white;
+ background: rgba(139, 139, 139, 0.38);
+ border-radius: 5em;
   /* width: 1.5em; */
   text-align: left;
   padding: 1px 9px;
@@ -1288,39 +1301,39 @@ color: #9E9898;
 .navnotilogia:hover{
   background: $notigestion !important;
   color: $white;
-@include css3(transition,all 0.5s ease);
+  @include css3(transition,all 0.5s ease);
 }
 .navdeportes:hover{
   background: $deportes !important;
   color: $white;
-@include css3(transition,all 0.5s ease);
+  @include css3(transition,all 0.5s ease);
 }
 .navpolitica:hover{
   background: $politica !important;
   color: $white;
-@include css3(transition,all 0.5s ease);
+  @include css3(transition,all 0.5s ease);
 
 }
 .navsalud:hover{
   background: $salud !important;
   color: $white;
-@include css3(transition,all 0.5s ease);
+  @include css3(transition,all 0.5s ease);
 }
 .navsexy:hover{
   background: $sexy !important;
   color: $white;
-@include css3(transition,all 0.5s ease);
+  @include css3(transition,all 0.5s ease);
 }
 .navtendencia:hover{
   background: $tendencia !important;  
   color: $white;
-@include css3(transition,all 0.5s ease);
+  @include css3(transition,all 0.5s ease);
 }
 
 .navgastronomia:hover{
   background: $gastronomia !important;  
   color: $white;
-@include css3(transition,all 0.5s ease);
+  @include css3(transition,all 0.5s ease);
 }
 
 /* PARA COPYPASTE

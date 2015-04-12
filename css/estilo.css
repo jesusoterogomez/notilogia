@@ -3000,8 +3000,18 @@ hr.cleararchive {
   margin-bottom: 30px;
   background-size: cover;
   text-align: center; }
+  .headernav .sticky-nav li {
+    position: relative;
+    left: -111px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
   .headernav.fixed {
     position: fixed; }
+    .headernav.fixed .sticky-logo li, .headernav.fixed .sticky-nav li {
+      left: 0; }
   .headernav aside {
     margin-top: 5em;
     margin-bottom: 6em; }
