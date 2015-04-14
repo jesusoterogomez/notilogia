@@ -1,5 +1,5 @@
 <aside class="sidebarindex nopadding large-4 medium-4 columns">
-								<div style="0 0 1em 0; background:#045e67; text-align:center; padding:1em 0;">
+								<div style="0 0 1em 0; background:#045e67; text-align:center; padding:1em 0; margin-bottom: 2em;">
 									<div id="google-ads-1"></div>
 									<script type="text/javascript"> 
 									 
@@ -50,10 +50,9 @@
 
 <div id="sidebarscroll">
 	<div class="fb-like-box" data-href="https://www.facebook.com/notilogia" data-width="360" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
-
 </div>
 
-<img src="<?php echo get_template_directory_uri();?>/img/banners/sexy.jpg" style="margin:1em 0;">
+	<img src="<?php echo get_template_directory_uri();?>/img/banners/sexy.jpg" style="margin:1em 0;">
 
 	<div class="tuiter">
 	<h3>Sigueme</h3>

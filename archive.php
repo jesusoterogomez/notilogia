@@ -8,10 +8,13 @@
 	</div>
 
 </div>
-
 	<div class="row">
 		<div class="large-12  columns">
+
+
 			<div class="large-8 medium-8 columns">
+
+
 				<?php $clearfix_archive;
 				if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<article <?php post_class('archive large-6 medium-6 columns'); ?>>
@@ -20,7 +23,7 @@
 					<h1><?php the_title(); ?></h1>	
 					</a>
 					<footer>
-						<?php the_category(',');echo " - "; the_date();echo " - "; ?>
+						<?php the_category(',');echo " - "; the_date();echo " - "; ch3_fb_comments_count(); ?>
 					</footer>
 					<?php the_excerpt('ch3_texto_resumen'); ?>
 					

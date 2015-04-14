@@ -1,3 +1,10 @@
+<?php
+if (is_home()) {
+	# code...
+}
+else{ ?>
+
+
 <div class="contenedor row">
 	<aside class="otrosrelacionados large-12 columns">
 		<p class="titulorelacionados">También te puede interesar</p>
@@ -28,6 +35,14 @@
 
 	</aside>
 </div>
+
+
+
+
+
+<?php }
+
+ ?>
 
 
 
@@ -85,7 +100,7 @@
 					</li>
 				</div>
 				<div class="medium-3 columns">
-					<li class="cat-item cat-item-3680"><a href="http://www.notilogia.com/notilogia" class="titulocat" title="Somos un portal de información útil y herramientas web para Venezuela.">Notilogia</a>
+					<!--<li class="cat-item cat-item-3680"><a href="http://www.notilogia.com/notilogia" class="titulocat" title="Somos un portal de información útil y herramientas web para Venezuela.">Notilogia</a>
 						<ul class="children">
 							<li class="cat-item cat-item-3685"><a href="http://www.notilogia.com/notilogia/entretenimiento" title="Las Ultimas Noticias del espectáculo Venezolano y Mundial.">Entretenimiento</a>
 							</li>
@@ -98,7 +113,7 @@
 								<li class="cat-item cat-item-3687"><a href="http://www.notilogia.com/notilogia/viral" title="Material multimedia compartido por los usuarios.">Viral</a>
 							</li>
 						</ul>
-					</li>	
+					</li>	-->
 					<li class="cat-item cat-item-3978"><a href="http://www.notilogia.com/politica" class="titulocat" title="El acontecer político, económico y social de Venezuela, las ultimas incidencias del panorama mundial y noticias del gobierno.">Política</a>
 						<ul class="children">
 							<li class="cat-item cat-item-3988"><a href="http://www.notilogia.com/politica/atipico" title="Todo lo demás que no encaje en las sub categorías que conforman la categoría Política.">Atípicos</a>
@@ -113,7 +128,14 @@
 						</li>
 						</ul>
 					</li>
-
+					<li class="cat-item"><a href="http://www.notilogia.com/categorydeportes"  class="titulocat" title="Información y Noticias deportivas de Venezuela y el mundo.">Deportes</a>
+					<ul>
+						<li><a href="#">Baloncesto</a></li>
+						<li><a href="#">Beisbol</a></li>
+						<li><a href="#">Futbol</a></li>
+						<li><a href="#">Otros deportes</a></li>
+					</ul>
+					</li><!-- ordenar deportes-->
 
 				</div>
 				<div class="medium-3 columns">
@@ -171,14 +193,7 @@
 							</li>
 						</ul>
 					</li>
-					<li class="cat-item"><a href="http://www.notilogia.com/categorydeportes"  class="titulocat" title="Información y Noticias deportivas de Venezuela y el mundo.">Deportes</a>
-					<ul>
-						<li><a href="#">Baloncesto</a></li>
-						<li><a href="#">Beisbol</a></li>
-						<li><a href="#">Futbol</a></li>
-						<li><a href="#">Otros deportes</a></li>
-					</ul>
-					</li><!-- ordenar deportes-->
+
 				
 				</div>
 
@@ -256,6 +271,15 @@ twitterFetcher.fetch(tuits);
 				//  Don't let them visit the url, we'll scroll you there
 				return false;
 			});
+
+
+
+$( ".open-search" ).click(function(e) {
+    e.preventDefault();
+
+  $('.search-wrapper').fadeToggle();
+	$('.open-search .icon-search').toggleClass('close');
+});
 </script>
 </body>
 </html>

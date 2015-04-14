@@ -30,9 +30,14 @@
         <div class="small-3 columns">
           <a href="<?php echo site_url(); ?>">
             <img src="<?php bloginfo('stylesheet_directory'); ?>/img/notilogia-verde.png" style="max-width: 240px;padding: 1em 0;">
+            <p style="  margin: 0;  font-family: "Open sans"; font-weight: 300; text-transform: uppercase; font-size: .8em;">Noticias, gestiones y tendencia.</p>
           </a>
         </div>
-        <div class="small-9 columns show-for-medium-up adheader">
+        <div class="small-1 columns">
+          <p style="  font-weight: 300;
+  margin-top: 2.4em;"><?php echo date('d/m/y'); ?></p>
+        </div>
+        <div class="small-8 columns show-for-medium-up adheader">
          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/ad-header-ejemplo.png">
        </div>
      </div>
@@ -52,7 +57,12 @@
               <div class="small-12 columns">
                 <nav class="menu-principal-container main"><!--<a href="#" class="nav-toggle" aria-hidden="true">Menu</a>-->
                   <ul id="menuheader" class="nav-collapse sticky-nav" >
-                  <li class="sticky-logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/notilogia-verde.png" style="height: 36px; padding-top:9px; vertical-align:middle;"></li>
+                    <li class="sticky-logo">
+                      <!--<a href="<?php echo get_bloginfo('url');?>">-->
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/notilogia-verde.png" style="height: 36px; padding-top:9px; vertical-align:middle;" class="logoverde">
+                        <!--<img src="<?php bloginfo('stylesheet_directory'); ?>/img/notilogia.png" style="height: 36px; padding-top:9px; vertical-align:middle;" class="logoblanco">-->
+                    <!--</a>-->
+                    </li>
                     <li id="menu-item-15321" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15321"><a href="http://www.notilogia.com/politica" class="navpolitica">Política</a></li>
                     <li id="menu-item-15319" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15319"><a href="http://www.notilogia.com/notigestion" class="navnotigestion">Notigestión</a></li>
                     <li id="menu-item-15324" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15324"><a href="http://www.notilogia.com/tendencia" class="navtendencias">Tendencia</a></li>
@@ -61,14 +71,16 @@
                     <li id="menu-item-15322" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15322"><a href="http://www.notilogia.com/salud" class="navsalud">Salud</a></li>
                     <li id="menu-item-15323" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15323"><a href="http://www.notilogia.com/sexy" class="navsexy">Sexy</a></li>
                     <li id="menu-item-16323" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16323"><a href="http://www.notilogia.com/gastronomia" class="navgastronomia"> Gastronomía</a></li>
-                    <li><a href="#"><span class="icon-facebook-f"></span></a></li>
-                    <li><a href="#"><span class="icon-twitter"></span></a></li>
-                    <li><a href="#"><span class="icon-instagram"></span></a></li>
-                    <li><a href="#"><span class="icon-google-plus"></span></a></li>
+                    <li><a href="http://facebook.com/notilogia"><span class="icon-facebook-f"></span></a></li>
+                    <li><a href="http://twitter.com/notilogia"><span class="icon-twitter"></span></a></li>
+                    <li><a href="http://instagram.com/notilogia"><span class="icon-instagram"></span></a></li>
+                    <li><a href="http://plus.google.com/+notilogia"><span class="icon-google-plus"></span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCvIPmiFaKtp_JybZyHLwxmA"><span class="icon-youtube"></span></a></li>
+                    <li><?php get_search_form(); ?></li>
                   </ul>
                 </nav>      
               </div>
-            </div>
+    </div>
 
           </nav>
 
@@ -94,10 +106,12 @@
                     <li id="menu-item-15322" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15322"><a href="http://www.notilogia.com/salud">Salud</a></li>
                     <li id="menu-item-15323" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15323"><a href="http://www.notilogia.com/sexy">Sexy</a></li>
                     <li id="menu-item-16323" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16323"><a href="http://www.notilogia.com/gastronomia">Gastronomía</a></li>
-                  <!--<li><a href="#"><span class="icon-facebook-f"></span></a></li>
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
-                  <li><a href="#"><span class="icon-google-plus"></span></a></li>-->
+                    <li><a href="http://facebook.com/notilogia"><span class="icon-facebook-f"></span></a></li>
+                    <li><a href="http://twitter.com/notilogia"><span class="icon-twitter"></span></a></li>
+                    <li><a href="http://instagram.com/notilogia"><span class="icon-instagram"></span></a></li>
+                    <li><a href="http://plus.google.com/+notilogia"><span class="icon-google-plus"></span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCvIPmiFaKtp_JybZyHLwxmA"><span class="icon-youtube"></span></a></li>
+                    <li><?php get_search_form(); ?></li>
                 </ul>
               </nav>      
             </div>

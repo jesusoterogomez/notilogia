@@ -800,6 +800,83 @@ hr.cleararchive {
 
 
 
+.icon-search{
+ /*background:url(https://cdn0.iconfinder.com/data/icons/iconsweets2/40/search_2.png);
+ background-size:30px 30px;
+ width:30px;
+ height:30px;
+ display:block;
+ position:absolute;
+ margin-top:-5px;*/
+ position: absolute;
+  margin-top: 8px;
+  display: block;
+  cursor: pointer;
+}
+
+.searchform{
+  position:relative;
+  .open-search{
+    font-size: 20px;
+        .icon-search{
+            top: 4px;
+            font-weight: bold;
+          cursor: pointer;
+          &.close:before{
+            /*content: "X";
+            background: url(http://www.damjanpita.com/wp-content/uploads/2013/07/close-awards.gif);
+            background-size:16px 16px;
+            width:16px;
+            height:16px;
+            top:5px;
+            right: -55px;*/
+            content: "X";
+            top: 2px;
+            right: -54px;
+            position: absolute;
+            font-family: $font-body;
+          }
+        }
+      }
+  
+  .search-wrapper{
+    position:absolute;
+    display:inline-block;
+    display:none;
+    right:100%;
+    //top:-9px;
+    margin-right:-32px;
+    margin-top: 4px;
+    /* display:block; */
+    
+    .search-input{
+      position:relative;
+      padding:8px 12px;
+      padding-right:40px;
+      border:1px solid #ccc;
+      border-radius:2px;
+      min-width: 200px;
+
+    }
+    .search-button{
+      position:absolute;
+      display:block;
+      right:5px;
+      top:4px;
+      background:none;
+      border:none;
+      outline:0;
+      .icon-search{
+          right: 5px;
+          top: 0px;
+        color: $notigestion;
+
+      }
+      
+    }
+  }
+  
+}
 
 
 
@@ -910,6 +987,8 @@ hr.cleararchive {
     float: left;
     text-align: center;
     border-bottom: 0;
+    padding-left:10px;
+    padding-right: 10px;
   }
 }
 
@@ -1221,8 +1300,10 @@ hr.cleararchive {
       h2{
         text-align: center;
         margin-top: 15em;
-
-
+        min-height: 3em;
+        vertical-align: middle;
+        font-family: $font-h;
+        font-weight: 300;
         a{
           color: $white;
           text-align: center;
@@ -1232,22 +1313,38 @@ hr.cleararchive {
   } 
   .wrap{
     height: 8em;
+    margin-top: 0;
   }
-// colores slider
-.category-tendencia{
-  h2{
-    background:$tendencia;
+  // colores slider
+  .category-tendencia{
+    h2{
+      background:rgba($tendencia,.6);
+    }
   }
+  .category-politica{
+    h2{
+      background:rgba($politica,.6);
+    }
+  }
+
 }
-.category-politica{
-  h2{
-    background:$politica;
+.paginacion{
+  text-align: center;
+  ul{
+    margin: 2em 0 0 0;
+    li{
+      display: inline-block;
+      font-weight: bold;
+      margin: 0 1em;
+      font-family: $font-body;
+    }
+  }
+  .active{
+    font-weight: normal;
   }
 }
 
 
-
-}
 .unslider-arrow{
   font-size: 2em;
   //position: absolute;
